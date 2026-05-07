@@ -1,0 +1,5 @@
+{
+  "name": "sf-proxy",
+  "main": "proxy.js",
+  "scripts": { "start": "node proxy.js" }
+}
