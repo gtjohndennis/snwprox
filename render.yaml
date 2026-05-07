@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: sf-proxy
+    env: node
+    buildCommand: ""
+    startCommand: node proxy.js
+    headers:
+      - path: /*
+        name: Access-Control-Allow-Origin
+        value: "*"
+      - path: /*
+        name: Access-Control-Allow-Headers
+        value: "*"
+      - path: /*
+        name: Access-Control-Allow-Methods
+        value: "*"
